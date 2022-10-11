@@ -22,14 +22,10 @@ public class Main {
 
         CreditAccount creditAccount = new CreditAccount();
         creditAccount.setOwnerName("Lech");
-        creditAccount.setAccountBalance(5000);
+        creditAccount.setAccountBalance(-3000);
         creditAccount.pay(0);
         creditAccount.add(0);
         System.out.println(creditAccount);
 
-        SavingsAccount savingsAccount1 = new SavingsAccount(2000);
-        savingsAccount1.setOwnerName("Jack");
-        savingsAccount1.setAccountBalance(-2000);
-        System.out.println(savingsAccount1);
     }
 }

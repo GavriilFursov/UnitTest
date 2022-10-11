@@ -18,10 +18,10 @@ public class TestAcc {
     }
 
     @Test
-    @DisplayName("Проверка задания допустимого баланса кредитному счету")
-    void setCreditBalance() {
-        creditAccount.setAccountBalance(-3000);
-        Assertions.assertEquals(-5000, creditAccount.getAccountBalance());
+    @DisplayName("Проверка установки недопустимого баланса дебетового счета")
+    void setCheckingBalanceMinus() {
+        checkingAccount.setAccountBalance(-1000);
+        Assertions.assertEquals(0, checkingAccount.getAccountBalance());
     }
 
     @Test
